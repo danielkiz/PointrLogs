@@ -15,6 +15,7 @@
 		3BFDEFD427F63C9A00CDDB72 /* PointrLogsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFDEFD327F63C9A00CDDB72 /* PointrLogsTests.swift */; };
 		3BFDEFDE27F63C9A00CDDB72 /* PointrLogsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFDEFDD27F63C9A00CDDB72 /* PointrLogsUITests.swift */; };
 		3BFDEFE027F63C9A00CDDB72 /* PointrLogsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFDEFDF27F63C9A00CDDB72 /* PointrLogsUITestsLaunchTests.swift */; };
+		3BFDEFED27F63D5B00CDDB72 /* LogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFDEFEC27F63D5B00CDDB72 /* LogsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3BFDEFD927F63C9A00CDDB72 /* PointrLogsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PointrLogsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BFDEFDD27F63C9A00CDDB72 /* PointrLogsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointrLogsUITests.swift; sourceTree = "<group>"; };
 		3BFDEFDF27F63C9A00CDDB72 /* PointrLogsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointrLogsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3BFDEFEC27F63D5B00CDDB72 /* LogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				3BFDEFBC27F63C9700CDDB72 /* AppDelegate.swift */,
 				3BFDEFBE27F63C9700CDDB72 /* SceneDelegate.swift */,
+				3BFDEFEC27F63D5B00CDDB72 /* LogsViewController.swift */,
 				3BFDEFC227F63C9700CDDB72 /* Main.storyboard */,
 				3BFDEFC527F63C9900CDDB72 /* Assets.xcassets */,
 				3BFDEFC727F63C9900CDDB72 /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			files = (
 				3BFDEFBD27F63C9700CDDB72 /* AppDelegate.swift in Sources */,
 				3BFDEFBF27F63C9700CDDB72 /* SceneDelegate.swift in Sources */,
+				3BFDEFED27F63D5B00CDDB72 /* LogsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
