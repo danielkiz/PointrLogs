@@ -61,6 +61,7 @@ class LogsViewController: UIViewController {
     @IBAction func clearLogsButton(_ sender: Any) {
         /// Hiding the UIView to make the main UIView visible
         logsView.isHidden = true
+        /// Changing the text of the button back to Logs
         logsButton.setTitle("Logs", for: .normal)
         logger.clear()
     }
