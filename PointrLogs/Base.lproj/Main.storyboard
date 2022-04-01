@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="54C-KB-Bm5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -10,61 +10,62 @@
     </dependencies>
     <scenes>
         <!--Logs-->
-        <scene sceneID="muA-6x-Sgf">
+        <scene sceneID="153-cN-1AR">
             <objects>
-                <viewController id="bk1-Wn-iD0" customClass="LogsViewController" customModule="PointrLogs" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jAh-UO-wPI">
+                <viewController id="54C-KB-Bm5" customClass="LogsViewController" customModule="PointrLogs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fjB-vH-ygK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="POINTR APPLICATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ww-8b-qH7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="POINTR APPLICATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTq-bR-iqC">
                                 <rect key="frame" x="41" y="377" width="333" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jaj-g3-85t">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qh3-Pj-xFk">
                                 <rect key="frame" x="41" y="464" width="333" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Generate Logs">
+                                <buttonConfiguration key="configuration" style="tinted" title="Generate Logs" cornerStyle="medium">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="generateLogsButton:" destination="bk1-Wn-iD0" eventType="touchUpInside" id="KGU-rT-aKv"/>
+                                    <action selector="generateLogsButton:" destination="54C-KB-Bm5" eventType="touchUpInside" id="z6R-gs-TIT"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cqu-ax-93v">
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aqi-c3-7Pl">
                                 <rect key="frame" x="44" y="128" width="327" height="598"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4du-tn-zkh">
-                                        <rect key="frame" x="-12" y="121" width="350" height="477"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Md4-aj-1eV">
+                                        <rect key="frame" x="-12" y="139" width="350" height="459"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Lk-XT-UyX">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqb-9S-Ml9">
                                         <rect key="frame" x="-3" y="31" width="333" height="55"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="tintColor" systemColor="systemPinkColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="Clear the Logs">
+                                        <buttonConfiguration key="configuration" style="tinted" title="Clear All Logs" cornerStyle="medium">
                                             <fontDescription key="titleFontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                                            <color key="baseBackgroundColor" red="1" green="0.14335065799999999" blue="0.063796805900000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="clearLogsButton:" destination="bk1-Wn-iD0" eventType="touchUpInside" id="kCp-L6-1Wn"/>
-                                            <action selector="generateLogsButton:" destination="bk1-Wn-iD0" eventType="touchUpInside" id="HhC-QX-Kwg"/>
+                                            <action selector="clearLogsButton:" destination="54C-KB-Bm5" eventType="touchUpInside" id="VgR-dT-hBb"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnR-Ye-5dC">
-                                <rect key="frame" x="312" y="44" width="94" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5X-1G-ff3">
+                                <rect key="frame" x="316" y="44" width="94" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Logs">
@@ -72,30 +73,27 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="showLogsButton:" destination="bk1-Wn-iD0" eventType="touchUpInside" id="cbk-O7-1lu"/>
+                                    <action selector="showLogsButton:" destination="54C-KB-Bm5" eventType="touchUpInside" id="eMt-y4-KOv"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="wZJ-U1-rXD"/>
+                        <viewLayoutGuide key="safeArea" id="dt1-3X-wA5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Logs" image="tray.fill" catalog="system" id="fcx-ny-6Yq"/>
+                    <tabBarItem key="tabBarItem" title="Logs" image="tray.fill" catalog="system" id="c0o-o2-Re1"/>
                     <connections>
-                        <outlet property="logsView" destination="cqu-ax-93v" id="OkA-hv-E8X"/>
-                        <outlet property="textView" destination="4du-tn-zkh" id="aRl-pf-jfF"/>
+                        <outlet property="logsView" destination="aqi-c3-7Pl" id="pqA-KG-2V9"/>
+                        <outlet property="textView" destination="Md4-aj-1eV" id="xzc-w4-zyW"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iRk-AS-c75" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3hC-nl-nEw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-130" y="27"/>
+            <point key="canvasLocation" x="-130.43478260869566" y="26.785714285714285"/>
         </scene>
     </scenes>
     <resources>
         <image name="paperplane" catalog="system" width="128" height="118"/>
         <image name="tray.fill" catalog="system" width="128" height="88"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
