@@ -27,7 +27,7 @@ class Logging {
     
     /// Responsible for printing out the logs
     func print() -> [String] {
-        return logs
+        return logs.reversed()
     }
     
     /// Function which deletes all the logs

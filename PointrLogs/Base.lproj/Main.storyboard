@@ -39,14 +39,6 @@
                                 <rect key="frame" x="44" y="128" width="327" height="598"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Md4-aj-1eV">
-                                        <rect key="frame" x="-12" y="139" width="350" height="459"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqb-9S-Ml9">
                                         <rect key="frame" x="-3" y="31" width="333" height="55"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -61,6 +53,14 @@
                                             <action selector="clearLogsButton:" destination="54C-KB-Bm5" eventType="touchUpInside" id="VgR-dT-hBb"/>
                                         </connections>
                                     </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Md4-aj-1eV">
+                                        <rect key="frame" x="-7" y="139" width="341" height="459"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -70,7 +70,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Logs">
                                     <imageReference key="image" image="paperplane" catalog="system" symbolScale="medium"/>
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="showLogsButton:" destination="54C-KB-Bm5" eventType="touchUpInside" id="eMt-y4-KOv"/>
@@ -82,6 +82,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Logs" image="tray.fill" catalog="system" id="c0o-o2-Re1"/>
                     <connections>
+                        <outlet property="logsButton" destination="g5X-1G-ff3" id="GVX-0e-Mn2"/>
                         <outlet property="logsView" destination="aqi-c3-7Pl" id="pqA-KG-2V9"/>
                         <outlet property="textView" destination="Md4-aj-1eV" id="xzc-w4-zyW"/>
                     </connections>

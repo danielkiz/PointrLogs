@@ -15,6 +15,8 @@ class LogsViewController: UIViewController {
     /// The IBOutlets of the UIView and the UITextView which we see when tap to open logs
     @IBOutlet weak var logsView: UIView!
     @IBOutlet weak var textView: UITextView!
+    /// IBOutlet of the button we use to see the logs
+    @IBOutlet weak var logsButton: UIButton!
     
     /// Action responsible for creating the template application logs
     @IBAction func generateLogsButton(_ sender: Any) {
@@ -34,15 +36,24 @@ class LogsViewController: UIViewController {
     /// Displaying our logs in the UITextView
     @IBAction func showLogsButton(_ sender: Any) {
         
-        /// Making the logs UIView visible, set invisible by standard
-        logsView.isHidden = false
-        
-        /// Checking if there are any logs, if not we show the message that there are no logs
-        if logger.print().count != 0 {
-            /// Displaying the logs, each log starting from the new line
-            textView.text = logger.print().joined(separator: "\n")
+        if logsView.isHidden == true {
+            /// Making the logs UIView visible, set invisible by standard
+            logsView.isHidden = false
+            
+            /// Changing the text of the button so the user could go back
+            logsButton.setTitle("Back", for: .normal)
+            
+            /// Checking if there are any logs, if not we show the message that there are no logs
+            if logger.print().count != 0 {
+                /// Displaying the logs, each log starting from the new line
+                textView.text = logger.print().joined(separator: "\n")
+            } else {
+                textView.text = "No logs recorded"
+            }
         } else {
-            textView.text = "No logs recorded"
+            logsView.isHidden = true
+            /// Changing the text of the button so the user could go to see logs
+            logsButton.setTitle("Logs", for: .normal)
         }
     }
     
