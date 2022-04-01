@@ -26,11 +26,11 @@ class LogsViewController: UIViewController {
         /// Adding the time when the log was created
         let formatter = DateFormatter()
         formatter.timeZone = TimeZone.current
-        formatter.dateFormat = "HH:mm:ss"
+        formatter.dateFormat = "dd-MM-yyyy - HH:mm:ss"
         let dateString = formatter.string(from: Date())
         
         /// Writing the randomly generated template log with the time of creation
-        logger.write(singleLog: "\(dateString) - \(templateLogs.randomElement()!)")
+        logger.write(singleLog: "\(dateString)\n\(templateLogs.randomElement()!)\n")
     }
     
     /// Displaying our logs in the UITextView
@@ -61,6 +61,7 @@ class LogsViewController: UIViewController {
     @IBAction func clearLogsButton(_ sender: Any) {
         /// Hiding the UIView to make the main UIView visible
         logsView.isHidden = true
+        logsButton.setTitle("Logs", for: .normal)
         logger.clear()
     }
 }
